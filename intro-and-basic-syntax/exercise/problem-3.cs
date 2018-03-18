@@ -7,11 +7,11 @@ namespace ex1
         static void Main(string[] args)
         {
 		//Here we declare a variable. We are getting it from the console and parsing it to double.
-            double miles = double.Parse(Console.ReadLine());
+            double milesInput = double.Parse(Console.ReadLine());
 		//Here we convert miles into kilometers.
-            double km = miles * 1.60934;
+            double milesToKm = milesInput * 1.60934;
 		//Here we print the kilometers with 2 digits after the floating point.
-            Console.WriteLine("{0:f2}",km);
+            Console.WriteLine("{0:f2}",milesToKm);
         }
     }
 }

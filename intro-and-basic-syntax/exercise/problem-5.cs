@@ -13,12 +13,12 @@ namespace ex1
             int currentEnergy = int.Parse(Console.ReadLine());
             int maxEnergy = int.Parse(Console.ReadLine());
 			//Here we are drawing the health and energy bar.
-            var health = "|" + new string('|', maxHealth - (maxHealth - currentHealth)) + new string('.',maxHealth-currentHealth) + "|";
-            var energy = "|" + new string('|', maxEnergy - (maxEnergy - currentEnergy)) + new string('.',maxEnergy-currentEnergy) + "|";
+            var healthBar = "|" + new string('|', maxHealth - (maxHealth - currentHealth)) + new string('.',maxHealth-currentHealth) + "|";
+            var energyBar = "|" + new string('|', maxEnergy - (maxEnergy - currentEnergy)) + new string('.',maxEnergy-currentEnergy) + "|";
 			//Here we print the name and the health and energy bars.
             Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("Health: {0}", health);
-            Console.WriteLine("Energy: {0}", energy);
+            Console.WriteLine("Health: {0}", healthBar);
+            Console.WriteLine("Energy: {0}", energyBar);
         }
     }
 }
